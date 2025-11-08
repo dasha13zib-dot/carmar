@@ -13,29 +13,527 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!--Подключение стилей-->
     <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/font.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/style.css">
    
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="header-menu"></div>
-            <div class="header-info"></div>
+            <div class="header-menu">
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <ul class="menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Как купить</a></li>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="contacts">
+                   <div class="social">
+                    <a href="#">
+                        <img src="img/telegram.svg" alt="telegram">
+                    </a>
+                    <a href="#">
+                        <img src="img/whatsApp.svg" alt="whatsApp">
+                    </a>
+                    <a href="#">
+                        <img src="img/YT.svg" alt="YT">
+                    </a>
+                   </div> 
+                   <div class="phone">
+                     <a href="tel:+78352675252">+7 (8352) 67-52-52</a>
+                     <a href="tel:+79279971242">+7 (927) 997-12-42</a>
+                   </div>
+                </div>
+            </div>
+            <div class="header-info">
+                <h1>Купите автомобиль дешевле на 60%*</h1>
+                <p>Привезем автомобиль под ключ со всеми документами. Подбор автомобиля под любой запрос  БЕСПЛАТНО  </p>
+                <button>Оставить заявку</button>
+                <img src="img/car.png" alt="car">
+            </div>
         </div>
     </header>
+    <section class="buy">
+        <div class="container">
+            <div class="buy-info">
+                <h2 class="title center">Поможем вам выгодно купить и привезти автомобиль в любую точку России</h2>
+                <p>Предлагаем Вам купить автомобиль дешевле и лучше, но за тот же бюджет</p>
+                <button>Оставить заявку</button>
+            </div>
+           <div class="buy-box">
+                <div class="buy-item">
+                    <h3>С пробегом</h3>
+                    <p>Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной ценына Авито и Авто.ру</p>
+                    <img src="img/brelok.png" alt="brelok" class="brelok">
+                </div>
+                <div class="buy-item">
+                    <h3>Новые</h3>
+                    <p>Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной ценына Авито и Авто.ру</p>
+                    <img src="img/fer.png" alt="fer" class="fer">
+                </div>
+                <div class="buy-item">
+                    <h3>Под ваш бюджет</h3>
+                    <p>Предлагаем Вам купить автомобиль дешевле до 60%, от рыночной ценына Авито и Авто.ру</p>
+                    <img src="img/money.png" alt="money" class="money">
+                </div>
+           </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about-img"></div>   
+        <div class="about-info">
+            <h2 class="title">О нас</h2>
+            <p>Мы автосалон и официальный партнер крупнейших мировых авто-аукционов: IAA (Insurance Auto Auction), Copart, Manheim.</p>
+            <ul>
+                <li>Работаем без посредников</li>
+                <li>Успешный опыт 10 лет</li>
+                <li>Отлаженная логистика</li>
+            </ul>
+            <div>
+                Мы берем на себя полное сопровождение сделки до передачи автомобиля в руки клиенту. 
+            </div>
+            <button>Оставить заявку</button>
+        </div>
+    </section>
+    <section class="buyCars">
+        <div class="container">
+            <h2 class="title">Какие авто привозим?</h2>
+            <p>Привозим авто не старше 7 лет на момент растаможки.</p>
+            <!-- Swiper слайдер-->
+             <div class="slider-btn">
+                 <div class="left">
+                    <img src="img/leftarrow.svg" alt="left">
+                </div>
+                <div class="right">
+                    <img src="img/rightarrow.svg" alt="right">
+                </div>
+             </div>
+            <div class="swiper mySwiper">
+               
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/buyCars1.png" alt="car">
+                        <h3>Toyota RAV4 2022</h3>
+                        <div class="stats">
+                            <div class="stats-name">Пробег</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">5 700 км</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Объем двигателя</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">2.0</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Мощность</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">149 л.с.</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Коробка</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">Автомат</div>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена на вторичном рынке в РФ</p>
+                            <p class="prise-secondary">3 300 000 ₽</p>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена автомобиля “под ключ”</p>
+                            <p class="prise-key">2 700 000 ₽</p>
+                        </div>
+                        <button>Оставить заявку</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/buyCars1.png" alt="car">
+                        <h3>Toyota RAV4 2022</h3>
+                        <div class="stats">
+                            <div class="stats-name">Пробег</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">5 700 км</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Объем двигателя</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">2.0</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Мощность</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">149 л.с.</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Коробка</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">Автомат</div>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена на вторичном рынке в РФ</p>
+                            <p class="prise-secondary">3 300 000 ₽</p>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена автомобиля “под ключ”</p>
+                            <p class="prise-key">2 700 000 ₽</p>
+                        </div>
+                        <button>Оставить заявку</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/buyCars1.png" alt="car">
+                        <h3>Toyota RAV4 2022</h3>
+                        <div class="stats">
+                            <div class="stats-name">Пробег</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">5 700 км</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Объем двигателя</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">2.0</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Мощность</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">149 л.с.</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Коробка</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">Автомат</div>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена на вторичном рынке в РФ</p>
+                            <p class="prise-secondary">3 300 000 ₽</p>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена автомобиля “под ключ”</p>
+                            <p class="prise-key">2 700 000 ₽</p>
+                        </div>
+                        <button>Оставить заявку</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/buyCars1.png" alt="car">
+                        <h3>Toyota RAV4 2022</h3>
+                        <div class="stats">
+                            <div class="stats-name">Пробег</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">5 700 км</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Объем двигателя</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">2.0</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Мощность</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">149 л.с.</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Коробка</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">Автомат</div>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена на вторичном рынке в РФ</p>
+                            <p class="prise-secondary">3 300 000 ₽</p>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена автомобиля “под ключ”</p>
+                            <p class="prise-key">2 700 000 ₽</p>
+                        </div>
+                        <button>Оставить заявку</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/buyCars1.png" alt="car">
+                        <h3>Toyota RAV4 2022</h3>
+                        <div class="stats">
+                            <div class="stats-name">Пробег</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">5 700 км</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Объем двигателя</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">2.0</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Мощность</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">149 л.с.</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Коробка</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">Автомат</div>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена на вторичном рынке в РФ</p>
+                            <p class="prise-secondary">3 300 000 ₽</p>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена автомобиля “под ключ”</p>
+                            <p class="prise-key">2 700 000 ₽</p>
+                        </div>
+                        <button>Оставить заявку</button>
+                    </div>
+                     <div class="swiper-slide">
+                        <img src="img/buyCars1.png" alt="car">
+                        <h3>Toyota RAV4 2022</h3>
+                        <div class="stats">
+                            <div class="stats-name">Пробег</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">5 700 км</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Объем двигателя</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">2.0</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Мощность</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">149 л.с.</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stats-name">Коробка</div>
+                            <div class="stats-dote"></div>
+                            <div class="stats-value">Автомат</div>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена на вторичном рынке в РФ</p>
+                            <p class="prise-secondary">3 300 000 ₽</p>
+                        </div>
+                        <div class="price">
+                            <p class="price-info">Цена автомобиля “под ключ”</p>
+                            <p class="prise-key">2 700 000 ₽</p>
+                        </div>
+                        <button>Оставить заявку</button>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                </div>
+        </div>
+    </section>
+    <section class="advice">
+        <div class="container">
+          <div class="advice-info">
+                <div class="ai1">
+                  <h2>Мы советуем подбирать автомобиль с бюджетом от <span class="red-text">1,3 млн</span></h2>
+                  <p>c учетом расходов на доставку, растаможку и наши услуги.</p>
+                  <button>Оставить заявку</button>
+                </div>
+                </div class="ai1">
+                    <img src="img/Toyota.png" alt="Toyota">
+                </div> 
+        </div>
+    </section>
+    <section class="auto-reviews">
+       
+            <h2>Обзоры привезенных авто</h2>
+              <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="left">
+                    <img src="img/leftarrow.svg" alt="left">
+                </div>
+                <div class="right">
+                    <img src="img/rightarrow.svg" alt="right">
+                </div>
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><iframe width=100% height=100%  src="https://www.youtube.com/embed/FedSLtGfejg?si=KfY81DudawUAKIQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="swiper-slide"><iframe width=100% height=100% src="https://www.youtube.com/embed/FedSLtGfejg?si=KfY81DudawUAKIQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="swiper-slide"><iframe width=100% height=100% src="https://www.youtube.com/embed/FedSLtGfejg?si=KfY81DudawUAKIQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="swiper-slide"><iframe width=100% height=100% src="https://www.youtube.com/embed/FedSLtGfejg?si=KfY81DudawUAKIQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="swiper-slide"><iframe width=100% height=100% src="https://www.youtube.com/embed/FedSLtGfejg?si=KfY81DudawUAKIQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+           <p>Привезли <strong>Lexus GX 460 с COPART1</strong> за <strong><span class="red-text">1 800 000 ₽</span><strong></strong></p>
+    </section>
     <section></section>
     <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="process">
+         <div class="container">
+            <h2 class="title">Процесс покупки</h2>
+            <details class="bt">
+                <summary>
+                    <p>01</p>
+                    <h3>Подбор автомобиля</h3>
+                </summary>
+                <div class="process-info">
+                    <h3>Консультация</h3>
+                    <p>Индивидуальный подход и консультация от опытных специалистов по всем вопросам, связанным с выбором, доставкой и стоимостью автомобиля и другими расходами.</p>
+                </div>
+                <div class="process-info">
+                    <h3>Предварительный договор</h3>
+                    <p>
+                        Подписывается предварительный договор, на подбор автомобиля согласно вашим требованиям, на условиях: Депозитный платеж 1000$
+                         <a href="img/about.car.svg"> download>
+                            <img src="img/download.svg" alt="download">
+                            Скачать пример договора
+                        </a>
+                    </p>
+                   
+                </div>
+                <div class="process-info">
+                    <h3>Подбор автомобиля</h3>
+                    <p>Индивидуальный подход и консультация от опытных специалистов по всем вопросам, связанным с выбором, доставкой и стоимостью автомобиля и другими расходами.</p>
+                </div>
+            </details>
+             <details class="b">
+                <summary>
+                    <p>02</p>
+                    <h3>Покупка</h3>
+                </summary>
+                <div class="process-info">
+                    <h3>Консультация</h3>
+                    <p>Индивидуальный подход и консультация от опытных специалистов по всем вопросам, связанным с выбором, доставкой и стоимостью автомобиля и другими расходами.</p>
+                </div>
+                <div class="process-info">
+                    <h3>Предварительный договор</h3>
+                    <p>
+                        Подписывается предварительный договор, на подбор автомобиля согласно вашим требованиям, на условиях: Депозитный платеж 1000$
+                         <a href="img/about.car.svg"> download>
+                            <img src="img/download.svg" alt="download">
+                            Скачать пример договора
+                        </a>
+                    </p>
+                   
+                </div>
+                <div class="process-info">
+                    <h3>Подбор автомобиля</h3>
+                    <p>Индивидуальный подход и консультация от опытных специалистов по всем вопросам, связанным с выбором, доставкой и стоимостью автомобиля и другими расходами.</p>
+                </div>
+            </details>
+            <details class="bb">
+                <summary>
+                    <p>03</p>
+                    <h3>Доставка в ваш город</h3>
+                </summary>
+                <div class="process-info">
+                    <h3>Консультация</h3>
+                    <p>Индивидуальный подход и консультация от опытных специалистов по всем вопросам, связанным с выбором, доставкой и стоимостью автомобиля и другими расходами.</p>
+                </div>
+                <div class="process-info">
+                    <h3>Предварительный договор</h3>
+                    <p>
+                        Подписывается предварительный договор, на подбор автомобиля согласно вашим требованиям, на условиях: Депозитный платеж 1000$
+                         <a href="img/about.car.svg"> download>
+                            <img src="img/download.svg" alt="download">
+                            Скачать пример договора
+                        </a>
+                    </p>
+                   
+                </div>
+                <div class="process-info">
+                    <h3>Подбор автомобиля</h3>
+                    <p>Индивидуальный подход и консультация от опытных специалистов по всем вопросам, связанным с выбором, доставкой и стоимостью автомобиля и другими расходами.</p>
+                </div>
+            </details>
+       
+       
+        </div>
+    </section>
+    <section class="our-guaranties">
+        <div class="container">
+            <h2 class="title center">Наши гарантии</h2>
+            <div class="guaranties">
+                <div class="guaranties-item">
+                    <img src="img/prepayment.svg" alt="prepayment">
+                    <p>100% возврат предоплаты </p>
+                </div>
+                <div class="guaranties-item">
+                    <img src="img/contract.svg" alt="contacts">
+                    <p>Работаем по договору</p>
+                </div>
+                <div class="guaranties-item">
+                    <img src="img/search.svg" alt="search">
+                    <p>Договор без мелкого шрифта</p>
+                </div>
+                <div class="guaranties-item">
+                    <img src="img/card.svg" alt="card">
+                    <p>Оплата в кассу нашего автосалона или на р/с компании</p>
+                </div>
+                <div class="guaranties-item">
+                    <img src="img/clean.svg" alt="clean">
+                    <p>Качество автомобиля</p>
+                </div>
+                <div class="guaranties-item">
+                    <img src="img/shield.svg" alt="shield">
+                    <p>На всех этапах сделки - автомобили застрахованы</p>
+                </div>
+            </div>
+            <div class="guaranties-info">
+                <p>Вы можете убедиться в прозрачности сделки скачав предварительный договор</p>
+                 <a href="img/about.car.svg"> download>
+                    <img src="img/download.svg" alt="download">
+                    Скачать пример договора
+                </a>
+            </div>
+            <h2 class="title center">Преимущества авто из США</h2>
+            <div class="advantage">
+                <div class="advantage1"></div>
+                <div class="advantage2"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+    </section>
     <section></section>
     <section></section>
     <footer></footer>
+
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
+            },
+            navigation: {
+                 nextEl: ".right",
+                 prevEl: ".left",
+            },
+        });
+  </script>
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+       var swiper = new Swiper(".mySwiper", {
+           slidesPerView: 3,
+           spaceBetween: 24,
+            loop: true,
+            //  autoplay: {
+            //     delay: 3000,
+            //  disableOnInteraction: false,
+            // },
+           pagination: {
+               el: ".swiper-pagination",
+               clickable: true,
+           },
+            navigation: {
+                nextEl: ".right",
+                prevEl: ".left",
+            },
+        });
+  </script>
 </body>
 </html>
